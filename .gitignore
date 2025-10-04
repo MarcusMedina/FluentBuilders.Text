@@ -1,0 +1,45 @@
+# Root-level gitignore for all platforms
+
+## C# / .NET
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.suo
+*.userosscache
+.vs/
+.idea/
+*.nupkg
+*.snupkg
+
+## Node.js
+node_modules/
+dist/
+*.tgz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+build/
+*.egg
+.pytest_cache/
+
+## OS
+.DS_Store
+Thumbs.db
