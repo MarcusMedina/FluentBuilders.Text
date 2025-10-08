@@ -80,7 +80,7 @@ jobs:
         working-directory: ./csharp
 
       - name: Code Coverage Report
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         with:
           files: ./csharp/coverage/**/coverage.opencover.xml
           fail_ci_if_error: true
