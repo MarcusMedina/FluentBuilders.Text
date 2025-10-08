@@ -35,14 +35,7 @@ jobs:
 
     - name: Test
       working-directory: ./csharp
-      run: dotnet test --no-build --configuration Release --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v4
-      with:
-        files: ./csharp/coverage/*/coverage.opencover.xml
-        fail_ci_if_error: false
-        # Tokenless upload for public repos
+      run: dotnet test --no-build --configuration Release --verbosity normal
 
   publish:
     needs: build-and-test
