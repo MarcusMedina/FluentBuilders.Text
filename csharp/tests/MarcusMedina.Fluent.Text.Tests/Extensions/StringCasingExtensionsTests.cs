@@ -1,6 +1,9 @@
 ﻿namespace MarcusMedina.Fluent.Text.Tests.Extensions;
 
 using FluentAssertions;
+using MarcusMedina.Fluent.Text.Builders;
+using Xunit;
+
 using MarcusMedina.Fluent.Text.Extensions.Casing;
 
 public class StringCasingExtensionsTests

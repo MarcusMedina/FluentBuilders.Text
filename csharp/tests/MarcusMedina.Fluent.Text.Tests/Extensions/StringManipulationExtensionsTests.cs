@@ -1,9 +1,9 @@
-﻿#pragma warning disable IDE0058 // Expression value is never used
+﻿namespace MarcusMedina.Fluent.Text.Tests.Extensions;
+#pragma warning disable IDE0058 // Expression value is never used
 
-namespace MarcusMedina.Fluent.Text.Tests.Extensions;
-
-using FluentAssertions;
 using MarcusMedina.Fluent.Text.Extensions.Manipulation;
+using FluentAssertions;
+using Xunit;
 
 public class StringManipulationExtensionsTests
 {
@@ -311,7 +311,7 @@ public class StringManipulationExtensionsTests
         var result = value.ShuffleSentences();
 
         // Assert
-        result.Split(new char[] { '.', '?', '!' }, StringSplitOptions.RemoveEmptyEntries)
+        result.Split(['.', '?', '!'], StringSplitOptions.RemoveEmptyEntries)
             .Should().HaveCount(3);
     }
 

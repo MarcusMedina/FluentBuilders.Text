@@ -16,7 +16,7 @@ Thank you for your interest in contributing! This project follows **enterprise-g
 **Setup Steps:**
 ```bash
 # 1. Clone and navigate
-git clone https://github.com/MarcusMedina/FluentBuilders.Text.git
+git clone https://github.com/MarcusMedinaPro/FluentBuilders.Text.git
 cd FluentBuilders.Text/csharp
 
 # 2. Restore dependencies
@@ -308,8 +308,8 @@ public class StringCasingExtensionsTests
 
 ## 📞 Getting Help
 
-- 💬 **Questions:** Open a [GitHub Discussion](https://github.com/MarcusMedina/FluentBuilders.Text/discussions)
-- 🐛 **Bugs:** Open a [GitHub Issue](https://github.com/MarcusMedina/FluentBuilders.Text/issues)
+- 💬 **Questions:** Open a [GitHub Discussion](https://github.com/MarcusMedinaPro/FluentBuilders.Text/discussions)
+- 🐛 **Bugs:** Open a [GitHub Issue](https://github.com/MarcusMedinaPro/FluentBuilders.Text/issues)
 - 💡 **Feature Ideas:** Start a discussion first
 
 ---

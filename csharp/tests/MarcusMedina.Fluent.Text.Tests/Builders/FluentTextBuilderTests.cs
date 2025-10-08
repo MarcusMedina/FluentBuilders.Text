@@ -1,7 +1,9 @@
 ﻿namespace MarcusMedina.Fluent.Text.Tests.Builders;
+#pragma warning disable IDE0058 // Expression value is never used
 
 using FluentAssertions;
 using MarcusMedina.Fluent.Text.Builders;
+using Xunit;
 
 public class FluentTextBuilderTests
 {

@@ -1,9 +1,9 @@
+﻿namespace MarcusMedina.Fluent.Text.Tests.Extensions;
 #pragma warning disable IDE0058 // Expression value is never used
 
-namespace MarcusMedina.Fluent.Text.Tests.Extensions;
-
-using FluentAssertions;
 using MarcusMedina.Fluent.Text.Extensions.Counting;
+using FluentAssertions;
+using Xunit;
 
 public class StringCountingExtensionsTests
 {

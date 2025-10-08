@@ -179,7 +179,7 @@ public static class StringCasingExtensions
             return value;
         }
 
-        var words = value.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+        var words = value.Split([' ', '\t'], StringSplitOptions.RemoveEmptyEntries);
         var result = new StringBuilder();
 
         foreach (var word in words)

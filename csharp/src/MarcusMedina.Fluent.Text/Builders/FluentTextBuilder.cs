@@ -1,5 +1,5 @@
 ﻿namespace MarcusMedina.Fluent.Text.Builders;
-using MarcusMedina.Fluent.Text.Extensions.Casing;
+
 /// <summary>
 /// Fluent builder for Text operations.
 /// </summary>

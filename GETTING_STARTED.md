@@ -18,7 +18,7 @@ Complete guide from zero to published NuGet package with trusted publishing.
 
 2. **Copy the repository URL**
    ```
-   https://github.com/MarcusMedina/FluentBuilders.Text.git
+   https://github.com/MarcusMedinaPro/FluentBuilders.Text.git
    ```
 
 ### Option B: Via GitHub CLI
@@ -56,7 +56,7 @@ git commit -m "Initial commit - FluentBuilders.Text v1.0.0
 - Trusted publishing configured"
 
 # Add remote (replace with your actual repo URL)
-git remote add origin https://github.com/MarcusMedina/FluentBuilders.Text.git
+git remote add origin https://github.com/MarcusMedinaPro/FluentBuilders.Text.git
 
 # Push to GitHub
 git push -u origin main
@@ -67,7 +67,7 @@ git push -u origin main
 Enumerating objects: XXX, done.
 Counting objects: 100% (XXX/XXX), done.
 ...
-To https://github.com/MarcusMedina/FluentBuilders.Text.git
+To https://github.com/MarcusMedinaPro/FluentBuilders.Text.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
@@ -77,7 +77,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 ## 🏗️ Step 3: Verify GitHub Actions
 
 1. **Go to Actions tab**
-   - Navigate to: `https://github.com/MarcusMedina/FluentBuilders.Text/actions`
+   - Navigate to: `https://github.com/MarcusMedinaPro/FluentBuilders.Text/actions`
 
 2. **Watch CI workflows run**
    - ✅ **CI/CD - C#** should execute automatically
@@ -172,7 +172,7 @@ If you want to go straight to automated publishing:
 4. **Fill in Details**
    ```
    Publisher Type:     GitHub Actions
-   Repository Owner:   MarcusMedina
+   Repository Owner:   MarcusMedinaPro
    Repository Name:    FluentBuilders.Text
    Workflow File:      release.yml
    Environment:        production
@@ -185,7 +185,7 @@ If you want to go straight to automated publishing:
 ### Create GitHub Environment
 
 1. **Go to Repository Settings**
-   - Navigate to: `https://github.com/MarcusMedina/FluentBuilders.Text/settings/environments`
+   - Navigate to: `https://github.com/MarcusMedinaPro/FluentBuilders.Text/settings/environments`
 
 2. **Create Environment**
    - Click **New environment**
@@ -225,7 +225,7 @@ git push origin v1.0.1
 ### Monitor the Release Workflow
 
 1. **Go to Actions**
-   - Navigate to: `https://github.com/MarcusMedina/FluentBuilders.Text/actions`
+   - Navigate to: `https://github.com/MarcusMedinaPro/FluentBuilders.Text/actions`
 
 2. **Watch Release Workflow**
    - Click on the **Release** workflow
@@ -259,7 +259,7 @@ Once trusted publishing works, remove the old API key:
    - Click **Delete**
 
 2. **GitHub Secrets (if you added one)**
-   - Go to: `https://github.com/MarcusMedina/FluentBuilders.Text/settings/secrets/actions`
+   - Go to: `https://github.com/MarcusMedinaPro/FluentBuilders.Text/settings/secrets/actions`
    - Remove `NUGET_API_KEY` if it exists
 
 ---

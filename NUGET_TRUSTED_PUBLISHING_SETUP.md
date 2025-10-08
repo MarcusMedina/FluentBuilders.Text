@@ -33,7 +33,7 @@
    Fill in the form:
    ```
    Publisher Type:     GitHub Actions
-   Repository Owner:   MarcusMedina
+   Repository Owner:   MarcusMedinaPro
    Repository Name:    FluentBuilders.Text
    Workflow File:      release.yml
    Environment:        production
@@ -72,7 +72,7 @@ steps:
 ### 3. Create GitHub Environment (if not exists)
 
 1. **Go to GitHub Repository Settings**
-   - Navigate to: `https://github.com/MarcusMedina/FluentBuilders.Text/settings`
+   - Navigate to: `https://github.com/MarcusMedinaPro/FluentBuilders.Text/settings`
 
 2. **Create Production Environment**
    - Click **Environments** (left sidebar)
@@ -100,7 +100,7 @@ Once trusted publishing works, remove the API key:
    - Click **Delete** or **Revoke**
 
 2. **GitHub Secrets**
-   - Go to: `https://github.com/MarcusMedina/FluentBuilders.Text/settings/secrets/actions`
+   - Go to: `https://github.com/MarcusMedinaPro/FluentBuilders.Text/settings/secrets/actions`
    - Find `NUGET_API_KEY`
    - Click **Remove**
 
@@ -127,7 +127,7 @@ Once trusted publishing works, remove the API key:
    ```
 
 3. **Monitor Workflow**
-   - Go to: `https://github.com/MarcusMedina/FluentBuilders.Text/actions`
+   - Go to: `https://github.com/MarcusMedinaPro/FluentBuilders.Text/actions`
    - Watch the **Release** workflow execute
    - Verify it reaches the `publish` job
    - Check for successful NuGet push (no API key errors)

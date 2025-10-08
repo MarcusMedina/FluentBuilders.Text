@@ -18,8 +18,8 @@
     <Product>FluentBuilders</Product>
     <Description>Fluent builder for Text manipulation</Description>
     <PackageTags>fluent;builder;text;strings;extension;marcusmedina</PackageTags>
-    <PackageProjectUrl>https://github.com/MarcusMedina/FluentBuilders.Text</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/MarcusMedina/FluentBuilders.Text</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/MarcusMedinaPro/FluentBuilders.Text</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MarcusMedinaPro/FluentBuilders.Text</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
