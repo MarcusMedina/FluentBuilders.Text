@@ -250,7 +250,7 @@ public static class StringManipulationExtensions
             return value;
         }
 
-        var words = value.Split([' ', '\t'], StringSplitOptions.RemoveEmptyEntries);
+        var words = value.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
         var random = new Random();
 
         for (int i = words.Length - 1; i > 0; i--)

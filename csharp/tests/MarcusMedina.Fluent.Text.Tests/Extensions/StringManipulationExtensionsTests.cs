@@ -311,7 +311,7 @@ public class StringManipulationExtensionsTests
         var result = value.ShuffleSentences();
 
         // Assert
-        result.Split(['.', '?', '!'], StringSplitOptions.RemoveEmptyEntries)
+        result.Split(new char[] { '.', '?', '!' }, StringSplitOptions.RemoveEmptyEntries)
             .Should().HaveCount(3);
     }
 
