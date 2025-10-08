@@ -72,8 +72,6 @@ This library follows **enterprise-grade quality standards**:
 **Namespace:** `MarcusMedina.Fluent.Text.Extensions.Casing`
 
 ```csharp
-"hello world".ToUpperCase()           // "HELLO WORLD"
-"HELLO WORLD".ToLowerCase()           // "hello world"
 "hello world".ToPascalCase()          // "HelloWorld"
 "HelloWorld".ToCamelCase()            // "helloWorld"
 "HelloWorld".ToKebabCase()            // "hello-world"
@@ -85,7 +83,7 @@ This library follows **enterprise-grade quality standards**:
 "john doe".ToNameCase()               // "John Doe"
 ```
 
-**Methods:** ToUpperCase, ToLowerCase, ToPascalCase, ToCamelCase, ToKebabCase, ToSnakeCase, ToScreamingSnakeCase, ToTitleCase, ToProperCase, ToSentenceCase, ToNameCase (11 core methods + additional variants like ToLeetSpeak, ToAlternatingCase, ToRandomCase)
+**Methods:** ToPascalCase, ToCamelCase, ToKebabCase, ToSnakeCase, ToScreamingSnakeCase, ToTitleCase, ToProperCase, ToSentenceCase, ToNameCase (9 core methods + additional variants like ToLeetSpeak, ToAlternatingCase, ToRandomCase)
 
 ---
 
