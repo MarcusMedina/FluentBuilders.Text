@@ -15,6 +15,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2025-10-08
+
+### Changed
+- **Package Tags**: Added "strings" and "extension" tags for better NuGet discoverability
+- **Documentation**: Removed ToUpperCase/ToLowerCase from README (use built-in .ToUpper()/.ToLower() instead)
+- **Metadata**: Updated package metadata for improved searchability
+
+### Infrastructure
+- Configured automated NuGet publishing with GitHub Actions
+- Streamlined release workflow with API key authentication
+
+---
+
 ## [1.0.0] - 2025-10-04
 
 ### 🎉 Initial Release - Enterprise-Grade String Extensions
