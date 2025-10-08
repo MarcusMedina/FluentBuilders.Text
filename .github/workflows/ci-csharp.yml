@@ -47,6 +47,9 @@ jobs:
     needs: build-and-test
     runs-on: ubuntu-latest
     if: github.event_name == 'release'
+    permissions:
+      id-token: write
+      contents: read
 
     steps:
     - uses: actions/checkout@v4
@@ -60,6 +63,6 @@ jobs:
       working-directory: ./csharp
       run: dotnet pack --configuration Release
 
-    - name: Push to NuGet
+    - name: Push to NuGet (Trusted Publishing)
       working-directory: ./csharp
-      run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+      run: dotnet nuget push **/*.nupkg --source https://api.nuget.org/v3/index.json --skip-duplicate

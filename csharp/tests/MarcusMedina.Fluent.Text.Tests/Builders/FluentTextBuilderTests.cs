@@ -1,29 +1,11 @@
+﻿namespace MarcusMedina.Fluent.Text.Tests.Builders;
+
 using FluentAssertions;
 using MarcusMedina.Fluent.Text.Builders;
 
-namespace MarcusMedina.Fluent.Text.Tests.Builders;
-
 public class FluentTextBuilderTests
 {
-    [Fact]
-    public void From_ValidValue_CreatesBuilder()
-    {
-        // Act
-        var builder = FluentTextBuilder.From("test");
-
-        // Assert
-        builder.Should().NotBeNull();
-    }
-
-    [Fact]
-    public void From_NullValue_ThrowsArgumentNullException()
-    {
-        // Act
-        var act = () => FluentTextBuilder.From(null!);
-
-        // Assert
-        act.Should().Throw<ArgumentNullException>();
-    }
+    #region Public Methods
 
     [Fact]
     public void Build_ReturnsValue()
@@ -37,4 +19,26 @@ public class FluentTextBuilderTests
         // Assert
         result.Should().Be("test");
     }
+
+    [Fact]
+    public void From_NullValue_ThrowsArgumentNullException()
+    {
+        // Act
+        var act = () => FluentTextBuilder.From(null!);
+
+        // Assert
+        act.Should().Throw<ArgumentNullException>();
+    }
+
+    [Fact]
+    public void From_ValidValue_CreatesBuilder()
+    {
+        // Act
+        var builder = FluentTextBuilder.From("test");
+
+        // Assert
+        builder.Should().NotBeNull();
+    }
+
+    #endregion Public Methods
 }
