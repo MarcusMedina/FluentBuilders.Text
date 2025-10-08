@@ -156,9 +156,16 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
-      - name: Publish to NuGet.org (Trusted Publishing)
+      - name: NuGet Login (Trusted Publishing)
+        id: nuget-login
+        uses: NuGet/login@v1
+        with:
+          user: MarcusMedina
+
+      - name: Publish to NuGet.org
         run: |
           dotnet nuget push ./packages/*.nupkg \
+            --api-key ${{ steps.nuget-login.outputs.NUGET_API_KEY }} \
             --source https://api.nuget.org/v3/index.json \
             --skip-duplicate
 
